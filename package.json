@@ -1,0 +1,28 @@
+{
+  "name": "agendamento",
+  "version": "1.0.0",
+  "description": "Software desenvolvido para auxiliar o agendamento das rotinas diárias.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Rodrigo Aparecido de Almeida",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.18.0",
+    "googleapis": "^144.0.0",
+    "jquery": "^3.7.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.2",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^3.1.4"
+  }
+}

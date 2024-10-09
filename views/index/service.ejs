@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta http-equiv="refresh" content="10"> -->
+    <title>Agendamento</title>
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-5">Cadastro de Serviços</h1>
+        <hr class="border border-danger border-3 opacity-75">
+        <form method="post" action="create">
+            <div class="mb-3">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control" name="name" id="name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Descrição</label>
+                <input type="text" class="form-control" name="description" id="description">
+            </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-danger btn-lg">Criar</button>
+            </div>
+        </form>
+    </div>
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/mask/jquery.mask.min.js"></script>
+    <script>
+        $('.phone').mask('(00) 00000-0000');
+        $('#cpf').mask('000.000.000-00', { reverse: true });
+    </script>
+</body>
+
+</html>

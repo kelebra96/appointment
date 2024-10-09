@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <script>
+        var error_msg = "<%= error_msg %>";
+        if ("<%= error_msg %>") {
+            alert("<%= error_msg %>");
+        }
+    </script>
+    <div class="container">
+        <input type="checkbox" id="flip">
+        <div class="cover">
+            <div class="front">
+                <img src="images/frontImg.jpg" alt="">
+                <div class="text">
+                    <span class="text-1">Um toque de beleza para deixar<br> as mãos ainda mais bonitas!</span>
+                    <span class="text-2">Vamos nos conectar</span>
+                </div>
+            </div>
+            <div class="back">
+                <img class="backImg" src="images/backImg.jpg" alt="">
+                <div class="text">
+                    <span class="text-1">Complete seu cadastro <br> com um passo</span>
+                    <span class="text-2">Vamos começar</span>
+                </div>
+            </div>
+        </div>
+        <div class="forms">
+            <div class="form-content">
+                <div class="login-form">
+                    <div class="title">Conecte-se</div>
+                    <form action="/login" method="post">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="bi bi-envelope-fill"></i>
+                                <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="bi bi-lock-fill"></i>
+                                <input type="password" name="password" placeholder="Digite sua senha" required>
+                            </div>
+                            <div class="text"><a href="#">Esqueceu sua senha?</a></div>
+                            <div class="d-grid gap-2">
+                                <button class="btn mt-2 btn-lg"
+                                    style="background: #c56b6b; color: white;">login</button>
+                            </div>
+                            <div class="text sign-up-text">Não tem uma conta? <label for="flip">
+                                    Cadastre-se agora</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="signup-form">
+                    <div class="title">Cadastre-se</div>
+                    <form action="/register" method="POST">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="bi bi-person-fill"></i>
+                                <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="bi bi-telephone-fill"></i>
+                                <input type="text" name="phone" id="phone" placeholder="Digite seu telefone" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="bi bi-envelope-fill"></i>
+                                <input type="email" name="email" placeholder="Email" placeholder="Digite seu e-mail"
+                                    required>
+                            </div>
+                            <div class="input-box">
+                                <i class="bi bi-lock-fill"></i>
+                                <input type="password" name="password" placeholder="Enter your password" required>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn mt-2 btn-lg"
+                                    style="background: #c56b6b; color: white;">Cadastrar</button>
+                            </div>
+                            <div class="text sign-up-text">Já tem uma conta? <label for="flip">Faça
+                                    login agora</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/mask/jquery.mask.min.js"></script>
+    <script>
+        $('#phone').mask('(00) 00000-0000');
+    </script>
+</body>
+
+</html>
